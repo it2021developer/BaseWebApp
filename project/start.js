@@ -1,5 +1,11 @@
 var express = require('express');
 var app = express();
+const cors = require("cors");
+
+app.use(cors({
+  origin: "http://localhost:500031313",
+}))
+
 
 app.set('port', (process.env.PORT || 5000));
 

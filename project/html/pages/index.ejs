@@ -7,19 +7,45 @@
 
   <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
+ 
   <div class="page-header">
-    <h1>YOYO web apps are so cool</h1>
+    <h1>Equifax API Tester</h1>
   </div>
 
-  <p id="demo">
-    This is me testing out a lil html file
-  </p>
+  <p>Enter your information and hit submit to obtain your credit score.</p>
 
-  <button class="btn btn-default" type="button" onclick="myFunction()">
-    Try it
-  </button>
+  <form>
+    
+    <p>First Name: <input id="fname" type="text"/>
+    Last Name: <input id="lname" type="text"/></p>
+    <p>Date of Birth (yyyy-mm-dd) : <input id="dob" type="text"/></p>
+    <p>Address/Civic Number: <input id="civic" type="text"/>
+    Street Name: <input id="street" type="text"/></p>
+    <p>City: <input id="city" type="text"/>
+    Province: <select id="province">
+        <option>AB</option>
+        <option>BC</option>
+        <option>MB</option>
+        <option>NB</option>
+        <option>NL</option>
+        <option>NT</option>
+        <option>NS</option>
+        <option>NU</option>
+        <option>ON</option>
+        <option>PE</option>
+        <option>QC</option>
+        <option>SK</option>
+        <option>YT</option>
+    </select></p>
+    <p>Postal Code: <input id="postal" type="text"/></p>
 
-  <div id="doge-image"/>
+
+  </form>
+
+    <p><button class="btn btn-dark" type="button" onClick="getToken()">
+    Submit
+    </button></p>
+
 
 </body>
 
